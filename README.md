@@ -1,9 +1,8 @@
-# Prist | A Gatsby & Prismic Starter
+# R202 Digital
 
 A light-themed starter powered by [Gatsby v2](https://www.gatsbyjs.org) and [Prismic](https://prismic.io/) to showcase portfolios and blogs.
 
 <img width="1280" alt="prist" src="https://user-images.githubusercontent.com/5288685/63654882-51787e00-c746-11e9-9e9e-2ab823129d93.png">
-
 
 ### 👩‍💻 [Demo website](http://prist.marguerite.io)
 
@@ -44,7 +43,6 @@ Your site is now running at `http://localhost:8000`!
 
 _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-
 ## 👩‍🎤 Configuring Prismic
 
 1. **Create account and repo**
@@ -64,6 +62,7 @@ In your `gatsby-config.js` file, add your Prismic Repo name to the `repositoryNa
         }
     },
 ```
+
 3. **Define your Custom Types**
 
 This starter uses 3 Custom Types:
@@ -73,7 +72,8 @@ Create the three following Custom Types by selecting "Create New" in the top rig
 
 **1. Homepage** (Single)
 ![image](https://user-images.githubusercontent.com/5288685/65046592-f265ed80-d92e-11e9-8700-4602b9038c0d.png)
-In the right panel, select *JSON editor* and paste the following:
+In the right panel, select _JSON editor_ and paste the following:
+
 ```
 {
   "Main" : {
@@ -155,6 +155,7 @@ In the right panel, select *JSON editor* and paste the following:
 ```
 
 **2. Post** (Repeatable)
+
 ```
 {
   "Main" : {
@@ -228,6 +229,7 @@ In the right panel, select *JSON editor* and paste the following:
 ```
 
 **3. Project** (Repeatable)
+
 ```
 {
   "Main" : {
@@ -301,26 +303,26 @@ Thank you to everyone for contributing!
 
 #### Prismic Data sourcing problems:
 
-Gatsby needs Prismic to return data, meaning the field cannot be left empty. 
+Gatsby needs Prismic to return data, meaning the field cannot be left empty.
 
 From [@georgex1999](https://github.com/georgex1999)
-* If you, like me, are new to prismic.io.. you can't just setup the Custom types as stated in the readme you also need to add Content to them and Publish. This may seem obvious but stumped me for a while!
-* As far as I could tell you need to fill in ALL the fields with content to get the site up and running. Otherwise you get a NULL value error.
-* I had an error that stumped me for a while and it was because I hadn't added the link properly to the social media link. I'll attach a screenshot of this in case it catches anyone else out and the error it brings up.
-![image](https://user-images.githubusercontent.com/5288685/86611700-0857a400-bf7d-11ea-9ec1-4f02f874e5af.png)
-https://github.com/margueriteroth/gatsby-prismic-starter-prist/issues/5#issuecomment-578314236
 
+- If you, like me, are new to prismic.io.. you can't just setup the Custom types as stated in the readme you also need to add Content to them and Publish. This may seem obvious but stumped me for a while!
+- As far as I could tell you need to fill in ALL the fields with content to get the site up and running. Otherwise you get a NULL value error.
+- I had an error that stumped me for a while and it was because I hadn't added the link properly to the social media link. I'll attach a screenshot of this in case it catches anyone else out and the error it brings up.
+  ![image](https://user-images.githubusercontent.com/5288685/86611700-0857a400-bf7d-11ea-9ec1-4f02f874e5af.png)
+  https://github.com/margueriteroth/gatsby-prismic-starter-prist/issues/5#issuecomment-578314236
 
 From [@kylemhudson](https://github.com/kylemhudson)
-* I'd recommend adding a few more points to the end of "3. Define your Custom Types" telling the user to fill out at least enough content in the Custom Types to populate one of each type, and definitely show adding the URL to the About section. Adding enough content to everything else doesn't do it, you have to add the URL type within About for the project to work.
-https://github.com/margueriteroth/gatsby-prismic-starter-prist/issues/5#issuecomment-653038425
 
+- I'd recommend adding a few more points to the end of "3. Define your Custom Types" telling the user to fill out at least enough content in the Custom Types to populate one of each type, and definitely show adding the URL to the About section. Adding enough content to everything else doesn't do it, you have to add the URL type within About for the project to work.
+  https://github.com/margueriteroth/gatsby-prismic-starter-prist/issues/5#issuecomment-653038425
 
 ---
 
 I've had issues fetching updated data from Prismic. Running `gatsby clean` clears the cache.
 
-Additionally, clearing the cache, node modules, and package-lock.json can also clear your slate. 
+Additionally, clearing the cache, node modules, and package-lock.json can also clear your slate.
+
 1. `rm -rf node_modules .cache package-lock.json`
 2. `npm install`
-
