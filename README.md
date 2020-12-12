@@ -1,4 +1,4 @@
-# R202 Digital
+# R202 Digital Website
 
 A light-themed starter powered by [Gatsby v2](https://www.gatsbyjs.org) and [Prismic](https://prismic.io/) to showcase portfolios and blogs.
 
